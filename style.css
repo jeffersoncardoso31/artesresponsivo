@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500;1,600&family=Open+Sans&display=swap');
+/* font-family: 'EB Garamond', serif;
+font-family: 'Open Sans', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+#logo img{
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: -70px;
+}
+#check{
+    display: none;
+}
+.container label img{
+    width: 40px;
+    position: fixed;
+    right:40px;
+    top: 25px;
+}
+.container ul li{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.container nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'EB Garamond', serif
+}
+.container ul{
+    position: fixed;
+    list-style: none;
+    height: 45vh;
+    width: 100%;
+    background-color: rgb(73, 73, 73);
+    top: 89px;
+    right: -100%;
+    transition:all 0.9s;
+}
+#check:checked ~ ul{
+    right: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+#inicio{
+    height: 90px;
+    background-color: rgb(73, 73, 73);
+}
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width:1140px
+    }
+}
