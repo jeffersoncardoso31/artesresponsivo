@@ -6,6 +6,21 @@ font-family: 'Open Sans', sans-serif; */
     padding: 0;
     box-sizing: border-box;
     border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: rgb(168, 164, 164);
+}
+p:first-letter {
+    margin-left: 3em;
+}
+#topo img{
+    width: 35px;
+}
+#topo{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 #logo img{
     width: 80px;
@@ -18,9 +33,12 @@ font-family: 'Open Sans', sans-serif; */
 }
 .container label img{
     width: 40px;
-    position: fixed;
-    right:40px;
+    position: relative;
+    right:-30px;
     top: 25px;
+}
+.container{
+    margin: 0 auto;
 }
 .container ul li{
     padding: 10px;
@@ -41,9 +59,9 @@ font-family: 'Open Sans', sans-serif; */
 .container ul{
     position: fixed;
     list-style: none;
-    height: 45vh;
+    height: 100vh;
     width: 100%;
-    background-color: rgb(73, 73, 73);
+    background-color: black;
     top: 89px;
     right: -100%;
     transition:all 0.9s;
@@ -59,11 +77,113 @@ font-family: 'Open Sans', sans-serif; */
     height: 90px;
     background-color: rgb(73, 73, 73);
 }
-
+hr{
+    border-color:black;
+    border-style: solid;
+    border-width: 1px;
+    width:90vw;  
+    margin: auto;
+  }
+  #quebraLinha{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  #quebraLinha img{
+      width: 30px;
+      position: relative;
+      top: -16px;
+  }
+.promocao{
+    padding: 40px 0px 40px;
+    height: 45vh;
+}
+.desconto img{
+    width: 90px;
+    height: 120px;
+    border-radius: 20px;
+}
+#principal{
+    height: 30vh;
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+#principal h1{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(51, 51, 51);
+}
+#principal h2{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-top: 30px;
+}
+.desconto h3{
+    opacity: 0.4;
+    font-size: 0.8em;
+    text-align: center;
+}
+.desconto h2{
+    color: red;
+    text-align: center;
+    font-size: 1em;
+}
+.flex2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+#descricao{
+    margin: auto;
+}
+#descricao p{
+    font-size: 1.3em;
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    padding: 20px;
+}
+#rodape{
+    height: 11.5vh;
+    background-color: rgb(73, 73, 73);
+}
+.redesSociais img{
+    width: 30px;
+}
+.flexrodape{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.copyright{
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+}
+.redesSociais{
+    margin-top: 20px;
+}
 @media (min-width:576px){
     .container{
         max-width: 540px;
     }
+   .promocao{
+       height: 70vh;
+   }
+   #descricao p{
+        text-align: justify;
+        font-size: 1.4em;
+   }
+   #rodape{
+       height: 20vh;
+   }
+   .container label img{
+       right: -130px;
+   }
+   #logo img{
+       margin-left: -170px;
+   }
 }
 @media (min-width:768px){
     .container{
